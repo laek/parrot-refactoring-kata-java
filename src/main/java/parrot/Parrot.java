@@ -2,6 +2,8 @@ package parrot;
 
 public class Parrot {
 
+    private static final double BASE_SPEED = 12.0;
+
     public static Parrot create(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed) {
         if (_type.equals(ParrotTypeEnum.EUROPEAN)) {
             return new EuropeanParrot();
@@ -17,6 +19,6 @@ public class Parrot {
     }
 
     protected double getBaseSpeed() {
-        return 12.0;
+        return BASE_SPEED;
     }
 }
