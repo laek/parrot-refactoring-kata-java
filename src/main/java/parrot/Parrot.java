@@ -10,16 +10,16 @@ public abstract class Parrot {
             return new NailedParrot();
         }
 
-        if (_type.equals(ParrotTypeEnum.AFRICAN)) {
-            return new AfricanParrot(numberOfCoconuts);
-        } else {
-            return new NorwegianBlueParrot(voltage);
-        }
+        return new NorwegianBlueParrot(voltage);
     }
 
     abstract public double getSpeed();
 
     public static Parrot european() {
         return new EuropeanParrot();
+    }
+
+    public static Parrot african(int numberOfcoconuts) {
+        return new AfricanParrot(numberOfcoconuts);
     }
 }
