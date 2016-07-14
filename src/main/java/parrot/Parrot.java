@@ -24,7 +24,7 @@ public class Parrot {
             return new EuropeanParrot();
         }
 
-        if(_type.equals(ParrotTypeEnum.AFRICAN)) {
+        if (_type.equals(ParrotTypeEnum.AFRICAN)) {
             return new AfricanParrot(numberOfCoconuts);
         }
 
@@ -47,13 +47,7 @@ public class Parrot {
         return Math.min(24.0, voltage * getBaseSpeed());
     }
 
-    private double getLoadFactor() {
-        return 9.0;
-    }
-
     protected double getBaseSpeed() {
         return 12.0;
     }
-
-
 }
