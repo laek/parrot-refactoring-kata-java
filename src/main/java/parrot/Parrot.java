@@ -3,6 +3,7 @@ package parrot;
 public abstract class Parrot {
 
     protected static final double BASE_SPEED = 12.0;
+    protected static final double MINIMUM_SPEED = 0.0;
 
     public static Parrot create(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed) {
         if(isNailed) {
