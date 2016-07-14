@@ -2,11 +2,9 @@ package parrot;
 
 public class NorwegianBlueParrot extends Parrot {
     private final double voltage;
-    private final boolean isNailed;
 
-    public NorwegianBlueParrot(double voltage, boolean isNailed) {
+    public NorwegianBlueParrot(double voltage) {
         this.voltage = voltage;
-        this.isNailed = isNailed;
     }
 
     public double getSpeed() {
