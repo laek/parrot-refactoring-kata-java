@@ -2,7 +2,7 @@ package parrot;
 
 public class Parrot {
 
-    private static final double BASE_SPEED = 12.0;
+    protected static final double BASE_SPEED = 12.0;
 
     public static Parrot create(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed) {
         if (_type.equals(ParrotTypeEnum.EUROPEAN)) {
@@ -18,7 +18,4 @@ public class Parrot {
         throw new RuntimeException("Should be unreachable");
     }
 
-    protected double getBaseSpeed() {
-        return BASE_SPEED;
-    }
 }
