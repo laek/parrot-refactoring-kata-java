@@ -28,18 +28,14 @@ public class Parrot {
             return new AfricanParrot(numberOfCoconuts);
         }
 
+        if(_type.equals(ParrotTypeEnum.NORWEGIAN_BLUE)) {
+            return new NorwegianBlueParrot(voltage, isNailed);
+        }
+
         return new Parrot(_type, numberOfCoconuts, voltage, isNailed);
     }
 
     public double getSpeed() {
-        switch (type) {
-            case EUROPEAN:
-                throw new RuntimeException("Should be unreachable");
-            case AFRICAN:
-                throw new RuntimeException("Should be unreachable");
-            case NORWEGIAN_BLUE:
-                return (isNailed) ? 0 : Math.min(24.0, voltage * getBaseSpeed());
-        }
         throw new RuntimeException("Should be unreachable");
     }
 
