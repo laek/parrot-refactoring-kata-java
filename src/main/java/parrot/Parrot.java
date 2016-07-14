@@ -8,7 +8,7 @@ public class Parrot {
     private boolean isNailed;
 
 
-    public Parrot(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed) {
+    private Parrot(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed) {
         this.type = _type;
         this.numberOfCoconuts = numberOfCoconuts;
         this.voltage = voltage;
