@@ -15,6 +15,10 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+    public static Parrot create(ParrotTypeEnum _type, int numberOfCoconuts, double voltage, boolean isNailed){
+        return new Parrot(_type, numberOfCoconuts, voltage, isNailed);
+    }
+
     public double getSpeed() {
         switch(type) {
             case EUROPEAN:
