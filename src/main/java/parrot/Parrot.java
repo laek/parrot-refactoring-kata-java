@@ -23,6 +23,11 @@ public class Parrot {
         if (_type.equals(ParrotTypeEnum.EUROPEAN)) {
             return new EuropeanParrot();
         }
+
+        if(_type.equals(ParrotTypeEnum.AFRICAN)) {
+            return new AfricanParrot(numberOfCoconuts);
+        }
+
         return new Parrot(_type, numberOfCoconuts, voltage, isNailed);
     }
 
@@ -31,7 +36,7 @@ public class Parrot {
             case EUROPEAN:
                 throw new RuntimeException("Should be unreachable");
             case AFRICAN:
-                return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
+                throw new RuntimeException("Should be unreachable");
             case NORWEGIAN_BLUE:
                 return (isNailed) ? 0 : getBaseSpeed(voltage);
         }
