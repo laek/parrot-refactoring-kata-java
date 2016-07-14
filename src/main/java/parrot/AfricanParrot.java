@@ -1,6 +1,7 @@
 package parrot;
 
 public class AfricanParrot extends Parrot {
+    private static final double LOAD_FACTOR = 9.0;
     private final int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {
@@ -8,6 +9,6 @@ public class AfricanParrot extends Parrot {
     }
 
     public double getSpeed() {
-        return Math.max(0, getBaseSpeed() - 9.0 * numberOfCoconuts);
+        return Math.max(0, getBaseSpeed() - LOAD_FACTOR * numberOfCoconuts);
     }
 }
