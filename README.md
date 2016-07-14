@@ -3,7 +3,7 @@
 
 A possible solution to the kata.
 
-Acknowlegements
+Acknowledgements
 ---------------
 
 Thanks to [Emily Bache](http://coding-is-like-cooking.info/) for this great kata.
