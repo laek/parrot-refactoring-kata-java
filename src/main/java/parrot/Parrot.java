@@ -19,7 +19,7 @@ public abstract class Parrot {
         return new EuropeanParrot();
     }
 
-    public static Parrot african(int numberOfcoconuts) {
-        return new AfricanParrot(numberOfcoconuts);
+    public static Parrot african(int numberOfCoconuts) {
+        return new AfricanParrot(numberOfCoconuts);
     }
 }
